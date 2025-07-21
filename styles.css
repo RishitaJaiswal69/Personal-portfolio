@@ -1,0 +1,248 @@
+body {
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(to right, #f130db 0%, #c904fa 50%);
+  height: 100vh;
+}
+
+.polygon-container {
+  position: relative;
+  width: 100%;
+  height: 80vh;
+}
+
+.outer-border {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  clip-path: polygon(0 0, 65% 0, 90% 50%, 65% 100%, 0 100%);
+  background-color: white;
+  z-index: 1;
+}
+
+.middle-border {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  clip-path: polygon(0 0, 63% 0, 88% 50%, 63% 100%, 0 100%);
+  background-color: rgb(16, 16, 17);
+  z-index: 2;
+}
+
+.inner-border {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  clip-path: polygon(0 0, 61% 0, 86% 50%, 61% 100%, 0 100%);
+  background-color: rgb(16, 9, 16);
+  z-index: 3;
+}
+
+.circle {
+  position: absolute;
+  top: 45%;
+  left: 15%;
+  transform: translate(-50%, -50%);
+
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  margin-left: 370px;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  gap: 20px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: rgb(247, 241, 241);
+  font-weight: bold;
+  transition: color 0.3s;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 20px;
+}
+
+nav .right-section {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.container {
+  width: 90%;
+  max-width: 1000px;
+  margin: auto;
+  padding: 2rem 0;
+}
+
+.hero {
+  background: linear-gradient(135deg, #8a04f1, #c904fa);
+  color: white;
+  padding: 5rem 0;
+  text-align: center;
+}
+
+.hero .highlight {
+  color: #0b0b0b;
+}
+
+.contact-icons {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  padding: 20px;
+}
+
+.contact-icons a {
+  color: #333;
+  font-size: 24px;
+  transition: color 0.3s ease;
+}
+
+.contact-icons a:hover {
+  color: #0077b5;
+  /* LinkedIn Blue */
+}
+
+.b-group {
+  margin-top: 1.5rem;
+}
+
+.b {
+  text-decoration: none;
+  padding: 0.8rem 1.5rem;
+  margin: 0 0.5rem;
+  background-color: #fff;
+  color: black;
+  border-radius: 25px;
+  font-weight: bold;
+  transition: 0.3s ease;
+}
+
+.b.outline {
+  background-color: transparent;
+  border: 2px solid white;
+  color: white;
+}
+
+.b:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 8px rgba(255, 255, 255, 0.2);
+}
+
+.navbar-dark .navbar-nav .nav-link {
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.navbar-dark .navbar-nav .nav-link:hover {
+  color: white;
+}
+
+.about-img {
+  width: 100%;
+  max-width: 340px;
+  height: 380px;
+  border-radius: 15px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.tab-content {
+  margin-top: 20px;
+}
+
+.nav-tabs .nav-link {
+  color: white;
+  border: none;
+  border-bottom: 3px solid transparent;
+}
+
+.nav-tabs .nav-link.active {
+  border-bottom: 3px solid #fff;
+  font-weight: bold;
+}
+
+.tab-pane ul {
+  padding-left: 1rem;
+}
+
+@media (max-width: 767px) {
+  .about-img {
+    margin-bottom: 20px;
+  }
+
+  .about-wrapper {
+    flex-direction: column !important;
+  }
+}
+
+.services-section {
+      padding: 60px 20px;
+      
+    }
+    .service-card {
+      border: none;
+      border-radius: 15px;
+      box-shadow: 0 0 12px rgba(32, 30, 30, 0.1);
+      transition: transform 0.3s ease;
+    }
+    .service-card:hover {
+      transform: translateY(-10px);
+    }
+    .service-icon {
+      font-size: 40px;
+      color: #1414e8;
+      margin-bottom: 15px;
+    }
+    .contact-section {
+      padding: 60px 20px;
+      
+    }
+    .icon-links a {
+      font-size: 24px;
+      margin-right: 15px;
+      color: #333;
+      transition: 0.3s;
+    }
+    .icon-links a:hover {
+      color: #007bff;
+    }
+    .form-control, .btn {
+      border-radius: 0;
+    }
+    .resume-btn {
+      margin-top: 20px;
+    }
+
+    .projects-section {
+      padding: 60px 20px;
+      
+    }
+    .project-card {
+      border-radius: 15px;
+      box-shadow: 0 0 12px rgba(0, 0, 0, 0.08);
+      transition: transform 0.3s ease;
+    }
+    .project-card:hover {
+      transform: translateY(-10px);
+    }
+    .project-img {
+      height: 180px;
+      object-fit: cover;
+      border-top-left-radius: 15px;
+      border-top-right-radius: 15px;
+    }
+     footer i {
+    color: #ffffff;
+    transition: color 0.3s;
+  }
+
+  footer i:hover {
+    color: #0d6efd;
+  }
